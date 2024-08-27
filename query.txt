@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS states
+(
+    videoname varchar(256) NOT NULL PRIMARY KEY,
+    videostate LONGTEXT  NOT NULL
+);
+
+INSERT INTO states (videoname, videostate) VALUES ('James', '{"video_name": "t3.mp4", "video_frame_path": "static/videos\t3", "origin_images_path": "static/videos\t3\origin_images", "mask_images_path": "static/videos\t3\mask_images", "tracking_images_path": "static/videos\t3\tracking_images", "ouput_path": "static/videos\t3.mp4", "face_images_path": "static/videos\t3\face_images", "best_faces_path": "static/videos\t3\best_faces", "fps": 24.0, "total_frame": 366, "video_length": 15.25, "frame_size": [1366, 720]}');
+
+SELECT * FROM videostates.states;
